@@ -1,4 +1,5 @@
 cd /config
-git commit -am "Mokki config `date + '%d-%m-%Y %H:%M:%S'`"
+NOW=$(date +"%m-%d-%Y")
+git commit -am "Mokki config $(date +"%m-%d-%Y")"
 git push -u origin master
 
