@@ -1,0 +1,15 @@
+# Ignore all the files
+*
+# Except these
+!*.yaml
+!*.gitignore
+!*.md
+!*.sh
+!*.js.*
+# But these will
+secrets.yaml
+.storage
+.cloud
+.google.storage
+.home-assistant.log
+
