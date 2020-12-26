@@ -1,1 +1,13 @@
-[]
+- id: '1608920124228'
+  alias: Github backup
+  description: ''
+  trigger:
+  - platform: time
+    at: 01:01
+  condition: []
+  action:
+  - service: hassio.addon_stdin
+    data:
+      addon: a0d7b954_ssh
+      input: ~/config/ha_gitpush.sh
+  mode: single
